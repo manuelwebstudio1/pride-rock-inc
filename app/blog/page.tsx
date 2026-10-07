@@ -19,7 +19,7 @@ export default function BlogPage() {
         image={images.aboutHero}
       />
       <section className="bg-cream py-16">
-        <div className="container-amek grid gap-7 md:grid-cols-2">
+        <div className="container-site grid gap-7 md:grid-cols-2">
           {articles.map((article) => (
             <article key={article.slug} className="overflow-hidden rounded-[28px] bg-white">
               <div className="relative aspect-[16/9]">
@@ -29,9 +29,9 @@ export default function BlogPage() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-gold-dark">
                   {article.category} · {article.date}
                 </p>
-                <h2 className="mt-3 font-serif text-3xl text-amek-900">{article.title}</h2>
+                <h2 className="mt-3 font-serif text-3xl text-pride-900">{article.title}</h2>
                 <p className="mt-3 text-muted">{article.excerpt}</p>
-                <Link href={`/blog/${article.slug}`} className="mt-5 inline-flex text-sm font-semibold text-amek-800">
+                <Link href={`/blog/${article.slug}`} className="mt-5 inline-flex text-sm font-semibold text-pride-800">
                   Read Article →
                 </Link>
               </div>

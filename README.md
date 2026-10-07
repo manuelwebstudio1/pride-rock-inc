@@ -1,6 +1,6 @@
-# AMEK Platinum Services
+# Pride Rock Inc.
 
-Premium real-estate website demo for **AMEK Platinum Services** — a Ghanaian agency helping clients buy, rent, sell and invest.
+Real-estate website for **Pride Rock Inc.** — a Dansoman-based Ghanaian agency helping clients buy, rent, sell and invest.
 
 ## Run locally
 
@@ -11,6 +11,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Demo content
+## Content
 
-All listings, testimonials, blog posts and images live in `/data`. Replace those files to swap in real AMEK inventory without touching layout components.
+Listings, testimonials, blog posts and images live in `/data`. Replace those files to swap in live Pride Rock inventory without touching layout components.

@@ -5,10 +5,10 @@ import { testimonials } from "@/data/testimonials";
 export function Testimonials() {
   return (
     <section className="bg-white py-20">
-      <div className="container-amek">
+      <div className="container-site">
         <FadeIn>
           <p className="eyebrow">What Our Clients Say</p>
-          <h2 className="mt-3 font-serif text-4xl text-amek-900 sm:text-5xl">Trusted by People Making Real Moves</h2>
+          <h2 className="mt-3 font-serif text-4xl text-pride-900 sm:text-5xl">Families Who Found Their Footing</h2>
         </FadeIn>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {testimonials.map((item, index) => (
@@ -27,7 +27,7 @@ export function Testimonials() {
                     className="h-12 w-12 rounded-full object-cover"
                   />
                   <div>
-                    <p className="font-semibold text-amek-900">{item.name}</p>
+                    <p className="font-semibold text-pride-900">{item.name}</p>
                     <p className="text-xs text-muted">{item.role}</p>
                   </div>
                 </figcaption>

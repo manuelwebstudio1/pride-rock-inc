@@ -8,7 +8,7 @@ import { filterProperties, type SearchFilters } from "@/lib/filter";
 export const metadata = {
   title: "Properties for Sale and Rent in Ghana",
   description:
-    "Browse homes, apartments, land and commercial properties with AMEK Platinum Services.",
+    "Browse homes, apartments, land and commercial properties with Pride Rock Inc. in Dansoman and across Accra.",
 };
 
 export default async function PropertiesPage({
@@ -25,24 +25,24 @@ export default async function PropertiesPage({
       <PageHero
         eyebrow="Properties"
         title="Find a Place You'll Love"
-        text="Search homes, apartments, land and commercial spaces across Accra and beyond. These are demo listings — easy for AMEK to replace with live inventory."
+        text="Search homes, apartments, land and commercial spaces from Dansoman across Accra and the Kasoa corridor."
         image={images.servicesHero}
       />
       <section className="bg-cream pb-20">
         <div className="pt-8">
           <PropertySearch initial={filters} compact />
         </div>
-        <div className="container-amek mt-10">
+        <div className="container-site mt-10">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 className="font-serif text-3xl text-amek-900">
+              <h2 className="font-serif text-3xl text-pride-900">
                 {results.length} {results.length === 1 ? "property" : "properties"}
               </h2>
               <p className="mt-1 text-sm text-muted">
-                {hasFilters ? "Showing results for your current filters." : "Showing the full AMEK demo collection."}
+                {hasFilters ? "Showing results for your current filters." : "Showing the current Pride Rock collection."}
               </p>
             </div>
-            <Link href="/favorites" className="text-sm font-semibold text-amek-800">
+            <Link href="/favorites" className="text-sm font-semibold text-pride-800">
               View saved properties
             </Link>
           </div>
@@ -51,13 +51,13 @@ export default async function PropertiesPage({
             <PropertyGrid properties={results} />
           ) : (
             <div className="rounded-[28px] border border-line bg-white px-8 py-16 text-center">
-              <h3 className="font-serif text-3xl text-amek-900">No matching properties</h3>
+              <h3 className="font-serif text-3xl text-pride-900">No matching properties</h3>
               <p className="mx-auto mt-3 max-w-md text-muted">
                 We couldn&apos;t find a property matching those filters. Try another location, type or price range.
               </p>
               <Link
                 href="/properties"
-                className="mt-6 inline-flex rounded-full bg-gold px-6 py-3 text-sm font-semibold text-amek-950"
+                className="mt-6 inline-flex rounded-full bg-gold px-6 py-3 text-sm font-semibold text-pride-950"
               >
                 Clear Filters
               </Link>

@@ -7,6 +7,20 @@ export type LocationCard = {
 
 export const locations: LocationCard[] = [
   {
+    key: "dansoman",
+    name: "Dansoman",
+    area: "Accra",
+    image:
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    key: "weija",
+    name: "Weija",
+    area: "Accra",
+    image:
+      "https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
     key: "east-legon",
     name: "East Legon",
     area: "Accra",
@@ -35,13 +49,6 @@ export const locations: LocationCard[] = [
       "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    key: "dzorwulu",
-    name: "Dzorwulu",
-    area: "Accra",
-    image:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
     key: "tema",
     name: "Tema",
     area: "Greater Accra",
@@ -53,13 +60,6 @@ export const locations: LocationCard[] = [
     name: "Kasoa",
     area: "Central Region",
     image:
-      "https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    key: "adenta",
-    name: "Adenta",
-    area: "Accra",
-    image:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1200&q=80",
   },
 ];

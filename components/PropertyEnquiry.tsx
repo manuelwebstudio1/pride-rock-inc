@@ -20,7 +20,7 @@ export function PropertyEnquiry({ property }: { property: Property }) {
   return (
     <aside className="rounded-[28px] border border-line bg-white p-6 shadow-[var(--shadow-card)] lg:sticky lg:top-28">
       <p className="text-sm text-muted">{property.status}</p>
-      <p className="mt-1 font-serif text-3xl text-amek-900">{formatPrice(property.price, property.pricePeriod)}</p>
+      <p className="mt-1 font-serif text-3xl text-pride-900">{formatPrice(property.price, property.pricePeriod)}</p>
       <p className="mt-1 text-sm text-muted">{property.location}</p>
 
       <div className="mt-5 grid gap-2">
@@ -35,7 +35,7 @@ export function PropertyEnquiry({ property }: { property: Property }) {
         </a>
         <a
           href={siteConfig.phoneHref}
-          className="inline-flex items-center justify-center gap-2 rounded-full border border-amek-900/15 px-5 py-3 text-sm font-semibold text-amek-900"
+          className="inline-flex items-center justify-center gap-2 rounded-full border border-pride-900/15 px-5 py-3 text-sm font-semibold text-pride-900"
         >
           Call {siteConfig.phone}
         </a>
@@ -43,19 +43,19 @@ export function PropertyEnquiry({ property }: { property: Property }) {
 
       {sent ? (
         <p className="mt-6 rounded-2xl bg-cream p-4 text-sm text-muted">
-          Your request is ready in WhatsApp. An AMEK agent will continue the conversation from there.
+          Your request is ready in WhatsApp. A Pride Rock agent will continue the conversation from there.
         </p>
       ) : (
         <form onSubmit={onSubmit} className="mt-6 space-y-3">
-          <p className="text-sm font-semibold text-amek-900">Request more information</p>
-          <input required name="name" placeholder="Full name" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-amek-700" />
-          <input required name="phone" type="tel" placeholder="Phone number" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-amek-700" />
-          <select name="intent" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-amek-700">
+          <p className="text-sm font-semibold text-pride-900">Request more information</p>
+          <input required name="name" placeholder="Full name" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-pride-700" />
+          <input required name="phone" type="tel" placeholder="Phone number" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-pride-700" />
+          <select name="intent" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-pride-700">
             <option>Schedule a viewing</option>
             <option>Request more information</option>
           </select>
-          <textarea name="note" rows={3} placeholder="Preferred day or any questions" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-amek-700" />
-          <button type="submit" className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold py-3 text-sm font-semibold text-amek-950">
+          <textarea name="note" rows={3} placeholder="Preferred day or any questions" className="w-full rounded-2xl border border-line bg-cream px-4 py-3 text-sm outline-none focus:border-pride-700" />
+          <button type="submit" className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold py-3 text-sm font-semibold text-pride-950">
             <CalendarDays className="h-4 w-4" />
             Schedule Viewing
           </button>

@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Real Estate Services",
   description:
-    "Property sales, rentals, land and commercial services from AMEK Platinum Services in Ghana.",
+    "Property sales, rentals, land and commercial services from Pride Rock Inc. in Dansoman, Accra.",
 };
 
 export default function ServicesPage() {
@@ -15,12 +15,12 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Our Services"
-        title="Real Estate Solutions Built Around You"
-        text="AMEK Platinum Services supports buyers, tenants, owners and investors across homes, land and commercial space."
+        title="Real Estate, Grounded in Dansoman"
+        text="Pride Rock Inc. supports buyers, tenants, owners and investors across homes, land and commercial space in Ghana."
         image={images.servicesHero}
       />
       <section className="bg-cream py-16">
-        <div className="container-amek space-y-10">
+        <div className="container-site space-y-10">
           {services.map((service, index) => (
             <article
               key={service.id}
@@ -33,11 +33,11 @@ export default function ServicesPage() {
                 <Image src={service.image} alt={service.title} fill className="object-cover" sizes="50vw" />
               </div>
               <div className="p-8 lg:p-12">
-                <h2 className="font-serif text-3xl text-amek-900 sm:text-4xl">{service.title}</h2>
+                <h2 className="font-serif text-3xl text-pride-900 sm:text-4xl">{service.title}</h2>
                 <p className="mt-4 leading-relaxed text-muted">{service.description}</p>
                 <Link
                   href="/contact"
-                  className="mt-6 inline-flex rounded-full bg-amek-900 px-5 py-3 text-sm font-semibold text-white"
+                  className="mt-6 inline-flex rounded-full bg-pride-900 px-5 py-3 text-sm font-semibold text-white"
                 >
                   Talk to an Agent
                 </Link>
@@ -47,7 +47,7 @@ export default function ServicesPage() {
           <div className="grid gap-5 md:grid-cols-2">
             {extraServices.map((service) => (
               <article key={service.title} className="rounded-[28px] border border-line bg-white p-8">
-                <h3 className="font-serif text-2xl text-amek-900">{service.title}</h3>
+                <h3 className="font-serif text-2xl text-pride-900">{service.title}</h3>
                 <p className="mt-3 text-muted">{service.summary}</p>
               </article>
             ))}

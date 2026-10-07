@@ -36,11 +36,11 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         solid
-          ? "bg-amek-900/92 shadow-[0_10px_40px_-24px_rgba(0,0,0,0.6)] backdrop-blur-xl"
+          ? "bg-pride-900/92 shadow-[0_10px_40px_-24px_rgba(0,0,0,0.6)] backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
-      <div className="container-amek flex h-[88px] items-center justify-between gap-6">
+      <div className="container-site flex h-[88px] items-center justify-between gap-6">
         <Logo theme="light" />
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
@@ -67,16 +67,20 @@ export function Navbar() {
           <Link href="/favorites" aria-label="Saved properties" className="text-white/80 hover:text-gold-light">
             <Heart className="h-5 w-5" />
           </Link>
-          <a
-            href={siteConfig.phoneHref}
-            className="inline-flex items-center gap-2 text-sm text-white/90 transition hover:text-gold-light"
-          >
-            <Phone className="h-4 w-4 text-gold" />
-            {siteConfig.phone}
-          </a>
+          <div className="inline-flex items-center gap-2 text-xs text-white/90">
+            <Phone className="h-4 w-4 shrink-0 text-gold" />
+            <span className="flex flex-col leading-tight">
+              <a href={siteConfig.phoneHref} className="transition hover:text-gold-light">
+                {siteConfig.phonePrimary}
+              </a>
+              <a href={siteConfig.phoneHrefSecondary} className="transition hover:text-gold-light">
+                {siteConfig.phoneSecondary}
+              </a>
+            </span>
+          </div>
           <Link
             href="/contact"
-            className="rounded-full border border-gold/80 px-5 py-2.5 text-sm font-medium text-gold-light transition hover:bg-gold hover:text-amek-950"
+            className="rounded-full border border-gold/80 px-5 py-2.5 text-sm font-medium text-gold-light transition hover:bg-gold hover:text-pride-950"
           >
             Talk to an Agent
           </Link>
@@ -104,8 +108,8 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-amek-900 lg:hidden">
-          <nav className="container-amek flex flex-col gap-1 py-6" aria-label="Mobile">
+        <div className="border-t border-white/10 bg-pride-900 lg:hidden">
+          <nav className="container-site flex flex-col gap-1 py-6" aria-label="Mobile">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -120,12 +124,15 @@ export function Navbar() {
             <Link href="/favorites" className="rounded-lg px-3 py-3 text-lg text-white">
               Saved Properties
             </Link>
-            <a href={siteConfig.phoneHref} className="px-3 py-3 text-gold-light">
-              {siteConfig.phone}
+            <a href={siteConfig.phoneHref} className="px-3 py-2 text-gold-light">
+              {siteConfig.phonePrimary}
+            </a>
+            <a href={siteConfig.phoneHrefSecondary} className="px-3 py-2 text-gold-light">
+              {siteConfig.phoneSecondary}
             </a>
             <Link
               href="/contact"
-              className="mt-2 rounded-full bg-gold px-5 py-3 text-center font-medium text-amek-950"
+              className="mt-2 rounded-full bg-gold px-5 py-3 text-center font-medium text-pride-950"
             >
               Talk to an Agent
             </Link>

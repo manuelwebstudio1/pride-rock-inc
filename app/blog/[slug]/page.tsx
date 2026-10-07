@@ -22,15 +22,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   return (
     <article className="bg-cream pb-20 pt-28">
-      <div className="container-amek max-w-3xl">
+      <div className="container-site max-w-3xl">
         <p className="text-sm text-muted">
-          <Link href="/blog" className="hover:text-amek-800">
+          <Link href="/blog" className="hover:text-pride-800">
             Insights
           </Link>
           <span className="px-2">/</span>
           {article.category}
         </p>
-        <h1 className="mt-4 font-serif text-4xl text-amek-900 sm:text-5xl">{article.title}</h1>
+        <h1 className="mt-4 font-serif text-4xl text-pride-900 sm:text-5xl">{article.title}</h1>
         <p className="mt-3 text-sm text-gold-dark">
           {article.category} · {article.date}
         </p>
@@ -42,11 +42,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
-        <div className="mt-12 rounded-[28px] bg-amek-900 p-8 text-white">
+        <div className="mt-12 rounded-[28px] bg-pride-900 p-8 text-white">
           <h2 className="font-serif text-3xl">Ready to look at actual properties?</h2>
-          <p className="mt-3 text-white/75">Browse current listings or speak with an AMEK agent.</p>
+          <p className="mt-3 text-white/75">Browse current listings or speak with a Pride Rock agent.</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/properties" className="rounded-full bg-gold px-5 py-3 text-sm font-semibold text-amek-950">
+            <Link href="/properties" className="rounded-full bg-gold px-5 py-3 text-sm font-semibold text-pride-950">
               Explore Properties
             </Link>
             <Link href="/contact" className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white">
@@ -56,11 +56,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
         {others.length > 0 && (
           <div className="mt-12">
-            <h2 className="font-serif text-2xl text-amek-900">More from AMEK</h2>
+            <h2 className="font-serif text-2xl text-pride-900">More from Pride Rock</h2>
             <ul className="mt-4 space-y-3">
               {others.map((item) => (
                 <li key={item.slug}>
-                  <Link href={`/blog/${item.slug}`} className="text-amek-800 hover:text-gold-dark">
+                  <Link href={`/blog/${item.slug}`} className="text-pride-800 hover:text-gold-dark">
                     {item.title}
                   </Link>
                 </li>

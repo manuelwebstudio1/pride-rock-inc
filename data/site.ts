@@ -1,15 +1,18 @@
 export const siteConfig = {
-  name: "AMEK Platinum Services",
-  shortName: "AMEK",
-  tagline: "Buy. Rent. Sell. Invest.",
+  name: "Pride Rock Inc.",
+  shortName: "Pride Rock",
+  tagline: "Solid ground in Ghanaian property.",
   description:
-    "Discover homes, apartments, land and commercial properties for sale and rent with AMEK Platinum Services.",
-  url: "https://amekplatinum.com",
-  phone: "0244873372",
-  phoneHref: "tel:0244873372",
-  whatsapp: "233244873372",
-  email: "info@amekplatinum.com",
-  location: "Mama's Inn, Accra",
+    "Pride Rock Inc. helps families and investors buy, rent, sell and hold property across Accra, from our office in Dansoman.",
+  url: "https://priderockinc.com",
+  phone: "0244482083 / 0264482083",
+  phonePrimary: "0244482083",
+  phoneSecondary: "0264482083",
+  phoneHref: "tel:0244482083",
+  phoneHrefSecondary: "tel:0264482083",
+  whatsapp: "233244482083",
+  email: "info@priderockinc.com",
+  location: "Dansoman, Accra",
   hours: "Mon – Sat: 8:00 AM – 6:00 PM",
   social: {
     facebook: "https://facebook.com",
@@ -29,14 +32,14 @@ export const navLinks = [
 ] as const;
 
 export const whatsappDefaultMessage =
-  "Hello AMEK Platinum Services, I am interested in one of your properties and would like to get more information.";
+  "Hello Pride Rock Inc., I am interested in one of your properties and would like to get more information.";
 
 export function whatsappLink(message = whatsappDefaultMessage) {
   return `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(message)}`;
 }
 
 export function propertyWhatsappMessage(title: string, location: string) {
-  return `Hello AMEK Platinum Services, I am interested in the ${title} in ${location}. Is it still available?`;
+  return `Hello Pride Rock Inc., I am interested in the ${title} in ${location}. Is it still available?`;
 }
 
 export function formatPrice(price: number, period?: "month" | null) {

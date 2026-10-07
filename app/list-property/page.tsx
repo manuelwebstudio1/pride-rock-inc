@@ -4,7 +4,7 @@ import { images } from "@/data/images";
 
 export const metadata = {
   title: "List Your Property",
-  description: "Sell or rent your property with professional marketing from AMEK Platinum Services.",
+  description: "Sell or rent your property with professional marketing from Pride Rock Inc.",
 };
 
 export default async function ListPropertyPage({
@@ -23,18 +23,18 @@ export default async function ListPropertyPage({
         image={images.sellCta}
       />
       <section className="bg-cream py-16">
-        <div className="container-amek grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="container-site grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <h2 className="font-serif text-3xl text-amek-900">What happens next</h2>
+            <h2 className="font-serif text-3xl text-pride-900">What happens next</h2>
             <ol className="mt-6 space-y-4 text-muted">
               <li>
-                <strong className="text-amek-900">1. Share the basics.</strong> Location, type and whether you want to sell or rent.
+                <strong className="text-pride-900">1. Share the basics.</strong> Location, type and whether you want to sell or rent.
               </li>
               <li>
-                <strong className="text-amek-900">2. We follow up.</strong> An agent will call or message to understand the property.
+                <strong className="text-pride-900">2. We follow up.</strong> An agent will call or message to understand the property.
               </li>
               <li>
-                <strong className="text-amek-900">3. Presentation.</strong> We help you present it clearly to serious enquiries.
+                <strong className="text-pride-900">3. Presentation.</strong> We help you present it clearly to serious enquiries.
               </li>
             </ol>
           </div>

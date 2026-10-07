@@ -21,7 +21,7 @@ export function Hero() {
   }, [index, slides.length]);
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-amek-950 text-white">
+    <section className="relative min-h-[100svh] overflow-hidden bg-pride-950 text-white">
       <div className="absolute inset-0" aria-hidden>
         {slides.map((src, i) => (
           <div
@@ -38,19 +38,19 @@ export function Hero() {
         ))}
       </div>
       <div
-        className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,24,19,0.88)_0%,rgba(6,40,32,0.62)_46%,rgba(6,40,32,0.28)_100%)]"
+        className="absolute inset-0 bg-[linear-gradient(90deg,rgba(28,20,16,0.88)_0%,rgba(44,29,20,0.62)_46%,rgba(44,29,20,0.28)_100%)]"
         aria-hidden
       />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,24,19,0.35)_0%,transparent_28%,rgba(4,24,19,0.45)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,20,16,0.35)_0%,transparent_28%,rgba(28,20,16,0.45)_100%)]" />
 
-      <div className="container-amek relative z-10 flex min-h-[100svh] flex-col justify-center pb-36 pt-28 lg:pb-40">
+      <div className="container-site relative z-10 flex min-h-[100svh] flex-col justify-center pb-36 pt-28 lg:pb-40">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="eyebrow text-gold-light"
         >
-          Welcome to AMEK Platinum Services
+          Welcome to Pride Rock Inc.
         </motion.p>
 
         <motion.h1
@@ -59,7 +59,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="mt-5 max-w-2xl font-serif text-[3.1rem] leading-[1.05] sm:text-6xl lg:text-[5.1rem]"
         >
-          Find Your Next <span className="text-gold">Home</span>
+          Find Solid <span className="text-gold">Ground</span>
         </motion.h1>
 
         <motion.p
@@ -70,7 +70,7 @@ export function Hero() {
         >
           Buy. Rent. Sell. Invest.
           <span className="mt-2 block text-base text-white/70 sm:text-lg">
-            Discover exceptional properties and real-estate opportunities with AMEK Platinum Services.
+            From Dansoman, Pride Rock Inc. helps you buy, rent and hold property across Accra with a clear brief and no rush.
           </span>
         </motion.p>
 
@@ -82,7 +82,7 @@ export function Hero() {
         >
           <Link
             href="/properties"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-amek-950 transition hover:bg-gold-light"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-pride-950 transition hover:bg-gold-light"
           >
             Explore Properties
             <ArrowRight className="h-4 w-4" />

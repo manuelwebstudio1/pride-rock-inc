@@ -7,13 +7,13 @@ import { articles } from "@/data/blog";
 export function BlogSection() {
   return (
     <section className="bg-cream py-20">
-      <div className="container-amek">
+      <div className="container-site">
         <FadeIn className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
             <p className="eyebrow">Insights</p>
-            <h2 className="mt-3 font-serif text-4xl text-amek-900 sm:text-5xl">Property Notes Worth Reading</h2>
+            <h2 className="mt-3 font-serif text-4xl text-pride-900 sm:text-5xl">Notes from the Dansoman Desk</h2>
           </div>
-          <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-amek-800">
+          <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-pride-800">
             View All Articles
             <ArrowRight className="h-4 w-4" />
           </Link>
@@ -35,9 +35,9 @@ export function BlogSection() {
                   <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-gold-dark">
                     {article.category} · {article.date}
                   </p>
-                  <h3 className="mt-2 font-serif text-xl text-amek-900">{article.title}</h3>
+                  <h3 className="mt-2 font-serif text-xl text-pride-900">{article.title}</h3>
                   <p className="mt-2 text-sm text-muted">{article.excerpt}</p>
-                  <Link href={`/blog/${article.slug}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amek-800">
+                  <Link href={`/blog/${article.slug}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-pride-800">
                     Read Article
                     <ArrowRight className="h-4 w-4" />
                   </Link>

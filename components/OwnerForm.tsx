@@ -11,7 +11,7 @@ export function OwnerForm({ defaultIntent = "sell" }: { defaultIntent?: string }
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    const message = `Hello AMEK Platinum Services, I would like to ${data.get("intent") || "list"} my ${data.get("type")} in ${data.get("location")}. Name: ${data.get("name")}. Phone: ${data.get("phone")}. ${data.get("message") || ""}`;
+    const message = `Hello Pride Rock Inc., I would like to ${data.get("intent") || "list"} my ${data.get("type")} in ${data.get("location")}. Name: ${data.get("name")}. Phone: ${data.get("phone")}. ${data.get("message") || ""}`;
     window.open(whatsappLink(message), "_blank", "noopener,noreferrer");
     setSent(true);
   }
@@ -19,7 +19,7 @@ export function OwnerForm({ defaultIntent = "sell" }: { defaultIntent?: string }
   if (sent) {
     return (
       <div className="rounded-3xl border border-line bg-cream p-8">
-        <h3 className="font-serif text-3xl text-amek-900">Thank you</h3>
+        <h3 className="font-serif text-3xl text-pride-900">Thank you</h3>
         <p className="mt-3 text-muted">
           Your property details have been prepared. If WhatsApp did not open, call us on {siteConfig.phone} and we will take it from there.
         </p>
@@ -29,24 +29,24 @@ export function OwnerForm({ defaultIntent = "sell" }: { defaultIntent?: string }
 
   return (
     <form onSubmit={onSubmit} className="rounded-3xl border border-line bg-cream p-6 sm:p-8">
-      <h3 className="font-serif text-2xl text-amek-900">Submit Property</h3>
+      <h3 className="font-serif text-2xl text-pride-900">Submit Property</h3>
       <p className="mt-2 text-sm text-muted">Share a few details and an agent will follow up.</p>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         <label className="block sm:col-span-1">
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted">Full Name</span>
-          <input required name="name" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-amek-700" />
+          <input required name="name" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-pride-700" />
         </label>
         <label className="block">
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted">Phone Number</span>
-          <input required name="phone" type="tel" placeholder="024 XXX XXXX" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-amek-700" />
+          <input required name="phone" type="tel" placeholder="024 XXX XXXX" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-pride-700" />
         </label>
         <label className="block">
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted">Property Location</span>
-          <input required name="location" placeholder="e.g. East Legon" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-amek-700" />
+          <input required name="location" placeholder="e.g. Dansoman" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-pride-700" />
         </label>
         <label className="block">
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted">Property Type</span>
-          <select name="type" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-amek-700">
+          <select name="type" className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-pride-700">
             {propertyTypes.map((type) => (
               <option key={type}>{type}</option>
             ))}
@@ -58,7 +58,7 @@ export function OwnerForm({ defaultIntent = "sell" }: { defaultIntent?: string }
             name="intent"
             value={intent}
             onChange={(e) => setIntent(e.target.value)}
-            className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-amek-700"
+            className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-pride-700"
           >
             <option value="sell">Sell</option>
             <option value="rent">Rent</option>
@@ -66,10 +66,10 @@ export function OwnerForm({ defaultIntent = "sell" }: { defaultIntent?: string }
         </label>
         <label className="block sm:col-span-2">
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted">Message</span>
-          <textarea name="message" rows={4} className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-amek-700" />
+          <textarea name="message" rows={4} className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none focus:border-pride-700" />
         </label>
       </div>
-      <button type="submit" className="mt-5 w-full rounded-full bg-gold py-3.5 text-sm font-semibold text-amek-950 hover:bg-gold-light">
+      <button type="submit" className="mt-5 w-full rounded-full bg-gold py-3.5 text-sm font-semibold text-pride-950 hover:bg-gold-light">
         Submit Property
       </button>
     </form>

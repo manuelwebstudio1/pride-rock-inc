@@ -3,9 +3,9 @@ export const services = [
     id: "sales",
     slug: "property-sales",
     title: "Property Sales",
-    summary: "Buy houses, apartments, land and commercial properties with guided support.",
+    summary: "Buy family houses, apartments and investment homes with a clear brief and honest viewings.",
     description:
-      "AMEK Platinum Services helps buyers identify suitable properties, arrange viewings and move through the purchase process with clear communication. Whether you are looking for a family home, an apartment or an investment, we match options to your brief and budget.",
+      "Pride Rock Inc. works with buyers who want a home they can stand on — not a rushed close. From Dansoman family houses to East Legon investments, we shortlist against your budget, arrange viewings and stay with you through the paperwork.",
     image:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&q=80",
   },
@@ -13,9 +13,9 @@ export const services = [
     id: "rentals",
     slug: "property-rentals",
     title: "Property Rentals",
-    summary: "Find a home or apartment in the neighbourhood that fits your life.",
+    summary: "Find a rental that fits your commute, school run and monthly budget.",
     description:
-      "From shortlists to viewings, we help tenants find rentals that match location, budget and lifestyle. Landlords also work with us to present their properties professionally and reach serious occupants.",
+      "Whether you need a roomy house in Dansoman, a flat along the Weija corridor or a serviced apartment closer to the airport, we match tenants to real options. Owners also list with us when they want serious occupants and tidy presentation.",
     image:
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80",
   },
@@ -23,9 +23,9 @@ export const services = [
     id: "land",
     slug: "land-sales",
     title: "Land Sales",
-    summary: "Residential, commercial and investment land opportunities.",
+    summary: "Residential and development plots with a practical eye on access and title.",
     description:
-      "Land remains a considered decision. We help clients review location, access and intended use, then connect them with plots that fit those requirements — from a family plot to a development parcel.",
+      "Land is only a good decision when the boundaries, access and documents hold. We help clients look at plots in Dansoman, Weija, Kasoa and growing Accra corridors — walking the land and asking the questions that photographs skip.",
     image:
       "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
   },
@@ -33,9 +33,9 @@ export const services = [
     id: "commercial",
     slug: "commercial-properties",
     title: "Commercial Properties",
-    summary: "Offices, shops, warehouses and other commercial spaces.",
+    summary: "Shops, offices and warehouses that work for the way you trade.",
     description:
-      "Businesses need space that works. We assist with offices, shops, warehouses and mixed-use premises, focusing on access, condition and the practical details that matter once you occupy the property.",
+      "From Kaneshie street frontage to Airport City suites and Tema yards, Pride Rock helps businesses find space they can occupy with confidence. We focus on access, power, parking and the daily details that matter after you sign.",
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80",
   },
@@ -44,10 +44,10 @@ export const services = [
 export const extraServices = [
   {
     title: "Property Management",
-    summary: "Day-to-day support for owners who want their property professionally looked after.",
+    summary: "Rent collection, tenant care and upkeep for owners who cannot be on site every week.",
   },
   {
     title: "Property Valuation",
-    summary: "Informed pricing guidance when you are preparing to sell, rent or refinance.",
+    summary: "Grounded pricing when you are preparing to sell, let or refinance a Ghanaian property.",
   },
 ] as const;

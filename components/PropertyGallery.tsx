@@ -19,7 +19,7 @@ export function PropertyGallery({ property }: { property: Property }) {
           sizes="(max-width: 1024px) 100vw, 70vw"
           className="object-cover"
         />
-        <span className="absolute left-4 top-4 rounded-full bg-amek-900/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-gold-light">
+        <span className="absolute left-4 top-4 rounded-full bg-pride-900/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-gold-light">
           {property.status}
         </span>
       </div>

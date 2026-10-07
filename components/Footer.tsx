@@ -14,12 +14,12 @@ const serviceLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-amek-950 text-white">
-      <div className="container-amek grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="bg-pride-950 text-white">
+      <div className="container-site grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Logo theme="light" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/65">
-            Your trusted real-estate partner in Ghana. Helping clients buy, rent, sell and invest with clarity.
+            Dansoman-based real estate for families and investors. Buy, rent, sell and hold with a clear brief.
           </p>
           <div className="mt-6 flex gap-3">
             {[
@@ -79,11 +79,16 @@ export function Footer() {
         <div>
           <h3 className="font-serif text-xl">Contact Us</h3>
           <ul className="mt-4 space-y-3 text-sm text-white/70">
-            <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-gold" />
-              <a href={siteConfig.phoneHref} className="hover:text-gold-light">
-                {siteConfig.phone}
-              </a>
+            <li className="flex items-start gap-2">
+              <Phone className="mt-0.5 h-4 w-4 text-gold" />
+              <span className="flex flex-col gap-1">
+                <a href={siteConfig.phoneHref} className="hover:text-gold-light">
+                  {siteConfig.phonePrimary}
+                </a>
+                <a href={siteConfig.phoneHrefSecondary} className="hover:text-gold-light">
+                  {siteConfig.phoneSecondary}
+                </a>
+              </span>
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-gold" />
@@ -107,8 +112,8 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="container-amek flex flex-col gap-3 py-5 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 AMEK Platinum Services. All Rights Reserved.</p>
+        <div className="container-site flex flex-col gap-3 py-5 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Pride Rock Inc. All Rights Reserved.</p>
           <div className="flex gap-5">
             <Link href="/privacy" className="hover:text-white">
               Privacy Policy

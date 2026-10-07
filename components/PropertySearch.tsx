@@ -45,7 +45,7 @@ export function PropertySearch({ initial, compact = false }: Props) {
     <div className={`relative z-20 ${compact ? "" : "-mt-24"}`}>
       <form
         onSubmit={onSubmit}
-        className="container-amek rounded-[28px] border border-white/70 bg-white p-4 shadow-[0_30px_80px_-40px_rgba(6,59,47,0.55)] sm:p-5"
+        className="container-site rounded-[28px] border border-white/70 bg-white p-4 shadow-[0_30px_80px_-40px_rgba(44,29,20,0.55)] sm:p-5"
       >
         <div className="flex gap-1 overflow-x-auto no-scrollbar rounded-full bg-cream p-1">
           {searchTabs.map((tab) => (
@@ -58,8 +58,8 @@ export function PropertySearch({ initial, compact = false }: Props) {
               }}
               className={`min-w-[84px] flex-1 rounded-full px-4 py-2.5 text-sm font-medium transition ${
                 category === tab.id
-                  ? "bg-amek-900 text-white shadow-sm"
-                  : "text-muted hover:text-amek-900"
+                  ? "bg-pride-900 text-white shadow-sm"
+                  : "text-muted hover:text-pride-900"
               }`}
             >
               {tab.label}
@@ -73,8 +73,8 @@ export function PropertySearch({ initial, compact = false }: Props) {
             <input
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              placeholder="e.g. East Legon, Accra"
-              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-amek-700 focus:bg-white"
+              placeholder="e.g. Dansoman, Accra"
+              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-pride-700 focus:bg-white"
             />
           </label>
 
@@ -83,7 +83,7 @@ export function PropertySearch({ initial, compact = false }: Props) {
             <select
               value={type}
               onChange={(e) => setType(e.target.value)}
-              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-amek-700 focus:bg-white"
+              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-pride-700 focus:bg-white"
             >
               <option value="">Any type</option>
               {propertyTypes.map((item) => (
@@ -99,7 +99,7 @@ export function PropertySearch({ initial, compact = false }: Props) {
             <select
               value={price}
               onChange={(e) => setPrice(e.target.value)}
-              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-amek-700 focus:bg-white"
+              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-pride-700 focus:bg-white"
             >
               <option value="">Any price</option>
               {ranges.map((item) => (
@@ -115,7 +115,7 @@ export function PropertySearch({ initial, compact = false }: Props) {
             <select
               value={beds}
               onChange={(e) => setBeds(e.target.value)}
-              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-amek-700 focus:bg-white"
+              className="w-full rounded-2xl border border-line bg-cream/60 px-4 py-3 text-sm outline-none transition focus:border-pride-700 focus:bg-white"
             >
               {bedrooms.map((item) => (
                 <option key={item.value} value={item.value}>
@@ -127,7 +127,7 @@ export function PropertySearch({ initial, compact = false }: Props) {
 
           <button
             type="submit"
-            className="mt-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-amek-900 px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-amek-800 md:col-span-2 xl:col-span-1"
+            className="mt-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-pride-900 px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-pride-800 md:col-span-2 xl:col-span-1"
           >
             <Search className="h-4 w-4 text-gold" />
             Search Properties

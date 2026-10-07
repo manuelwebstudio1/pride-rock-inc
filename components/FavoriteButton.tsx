@@ -13,7 +13,7 @@ export function FavoriteButton({ id, title }: { id: string; title: string }) {
       onClick={() => toggle(id)}
       aria-label={liked ? `Remove ${title} from favourites` : `Save ${title}`}
       className={`flex h-12 w-12 items-center justify-center rounded-full border transition ${
-        liked ? "border-red-200 bg-white text-red-500" : "border-line bg-white text-amek-900"
+        liked ? "border-red-200 bg-white text-red-500" : "border-line bg-white text-pride-900"
       }`}
     >
       <Heart className={`h-5 w-5 ${liked ? "fill-current" : ""}`} />

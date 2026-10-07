@@ -9,7 +9,7 @@ type FavoritesContextValue = {
 };
 
 const FavoritesContext = createContext<FavoritesContextValue | null>(null);
-const STORAGE_KEY = "amek-favorites";
+const STORAGE_KEY = "pride-favorites";
 
 export function FavoritesProvider({ children }: { children: React.ReactNode }) {
   const [ids, setIds] = useState<string[]>([]);

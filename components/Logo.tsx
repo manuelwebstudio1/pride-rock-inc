@@ -11,18 +11,18 @@ export function Logo({ compact = false }: LogoProps) {
     <Link
       href="/"
       className="relative flex items-center bg-transparent"
-      aria-label="AMEK Platinum Services home"
+      aria-label="Pride Rock Inc. home"
     >
       <Image
-        src="/amek-logo.png"
-        alt="AMEK Platinum Services"
-        width={680}
-        height={473}
+        src="/pride-rock-logo.png"
+        alt="Pride Rock Inc."
+        width={1024}
+        height={682}
         priority
         className={
           compact
             ? "h-12 w-auto bg-transparent object-contain object-left"
-            : "h-[4.35rem] w-auto bg-transparent object-contain object-left sm:h-[4.75rem]"
+            : "h-[4.5rem] w-auto bg-transparent object-contain object-left sm:h-[4.85rem]"
         }
       />
     </Link>

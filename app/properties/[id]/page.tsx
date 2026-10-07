@@ -32,9 +32,9 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
 
   return (
     <article className="bg-cream pb-24 pt-28 lg:pb-20">
-      <div className="container-amek">
+      <div className="container-site">
         <p className="text-sm text-muted">
-          <Link href="/properties" className="hover:text-amek-800">
+          <Link href="/properties" className="hover:text-pride-800">
             Properties
           </Link>
           <span className="px-2">/</span>
@@ -42,7 +42,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
         </p>
         <div className="mt-4 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <h1 className="font-serif text-4xl text-amek-900 sm:text-5xl">{property.title}</h1>
+            <h1 className="font-serif text-4xl text-pride-900 sm:text-5xl">{property.title}</h1>
             <p className="mt-2 flex items-center gap-2 text-muted">
               <MapPin className="h-4 w-4 text-gold-dark" />
               {property.location}
@@ -81,13 +81,13 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
             </div>
 
             <section className="mt-10 rounded-[28px] bg-white p-7">
-              <h2 className="font-serif text-3xl text-amek-900">About this property</h2>
+              <h2 className="font-serif text-3xl text-pride-900">About this property</h2>
               <p className="mt-4 leading-relaxed text-muted">{property.description}</p>
             </section>
 
             <section className="mt-6 grid gap-6 md:grid-cols-2">
               <div className="rounded-[28px] bg-white p-7">
-                <h3 className="font-serif text-2xl text-amek-900">Amenities</h3>
+                <h3 className="font-serif text-2xl text-pride-900">Amenities</h3>
                 <ul className="mt-4 space-y-2 text-sm text-muted">
                   {property.amenities.map((item) => (
                     <li key={item}>• {item}</li>
@@ -95,7 +95,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
                 </ul>
               </div>
               <div className="rounded-[28px] bg-white p-7">
-                <h3 className="font-serif text-2xl text-amek-900">Features</h3>
+                <h3 className="font-serif text-2xl text-pride-900">Features</h3>
                 <ul className="mt-4 space-y-2 text-sm text-muted">
                   {property.features.map((item) => (
                     <li key={item}>• {item}</li>
@@ -105,11 +105,15 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
             </section>
 
             <section className="mt-6 rounded-[28px] bg-white p-7">
-              <h3 className="font-serif text-2xl text-amek-900">Speak with an AMEK agent</h3>
+              <h3 className="font-serif text-2xl text-pride-900">Speak with a Pride Rock agent</h3>
               <p className="mt-3 max-w-xl text-sm text-muted">
                 An agent can confirm availability, arrange a viewing and answer questions about this {property.type.toLowerCase()} in {property.location}.
               </p>
-              <p className="mt-4 text-sm font-medium text-amek-900">{siteConfig.phone}</p>
+              <p className="mt-4 text-sm font-medium text-pride-900">
+                <a href={siteConfig.phoneHref}>{siteConfig.phonePrimary}</a>
+                <span className="mx-2 text-muted">/</span>
+                <a href={siteConfig.phoneHrefSecondary}>{siteConfig.phoneSecondary}</a>
+              </p>
             </section>
           </div>
 
@@ -120,7 +124,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
 
         {related.length > 0 && (
           <section className="mt-16">
-            <h2 className="font-serif text-3xl text-amek-900">Similar properties</h2>
+            <h2 className="font-serif text-3xl text-pride-900">Similar properties</h2>
             <div className="mt-6 grid gap-6 md:grid-cols-3">
               {related.map((item) => (
                 <PropertyCard key={item.id} property={item} />
@@ -138,7 +142,7 @@ function Spec({ label, value, icon }: { label: string; value: string; icon?: Rea
   return (
     <div className="rounded-2xl bg-white px-4 py-4">
       <p className="text-[11px] font-semibold uppercase tracking-wide text-muted">{label}</p>
-      <p className="mt-1 inline-flex items-center gap-2 font-medium text-amek-900">
+      <p className="mt-1 inline-flex items-center gap-2 font-medium text-pride-900">
         {icon}
         {value}
       </p>

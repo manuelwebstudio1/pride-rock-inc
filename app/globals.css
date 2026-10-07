@@ -4,22 +4,22 @@
   --font-serif: var(--font-playfair), "Times New Roman", serif;
   --font-sans: var(--font-dm), "Segoe UI", sans-serif;
 
-  --color-amek-950: #04251d;
-  --color-amek-900: #063b2f;
-  --color-amek-800: #0b5141;
-  --color-amek-700: #0e6b54;
-  --color-amek-600: #148066;
+  --color-pride-950: #1c1410;
+  --color-pride-900: #2c1d14;
+  --color-pride-800: #3f2a1c;
+  --color-pride-700: #5c3c26;
+  --color-pride-600: #7a5334;
   --color-gold: #c9a44c;
   --color-gold-light: #e0c57a;
   --color-gold-dark: #a8873a;
-  --color-cream: #f7f5ef;
-  --color-cream-dark: #ebe6d9;
+  --color-cream: #f6f1e8;
+  --color-cream-dark: #ebe4d4;
   --color-ink: #151515;
   --color-muted: #5c5c5c;
   --color-line: #e4dfd3;
 
-  --shadow-card: 0 18px 40px -24px rgb(6 59 47 / 0.28);
-  --shadow-lift: 0 28px 50px -20px rgb(6 59 47 / 0.35);
+  --shadow-card: 0 18px 40px -24px rgb(44 29 20 / 0.28);
+  --shadow-lift: 0 28px 50px -20px rgb(44 29 20 / 0.35);
 }
 
 html {
@@ -34,8 +34,8 @@ body {
 }
 
 ::selection {
-  background: #0b5141;
-  color: #f7f5ef;
+  background: #3f2a1c;
+  color: #f6f1e8;
 }
 
 h1,
@@ -46,13 +46,13 @@ h3,
   letter-spacing: -0.02em;
 }
 
-.container-amek {
+.container-site {
   width: min(1180px, calc(100% - 2rem));
   margin-inline: auto;
 }
 
 @media (min-width: 1280px) {
-  .container-amek {
+  .container-site {
     width: min(1240px, calc(100% - 3rem));
   }
 }

@@ -21,7 +21,7 @@ export function PropertyCard({ property }: { property: Property }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           className="object-cover transition duration-700 group-hover:scale-105"
         />
-        <span className="absolute left-4 top-4 rounded-full bg-amek-900/90 px-3 py-1 text-[11px] font-semibold tracking-wide text-gold-light uppercase">
+        <span className="absolute left-4 top-4 rounded-full bg-pride-900/90 px-3 py-1 text-[11px] font-semibold tracking-wide text-gold-light uppercase">
           {property.status}
         </span>
         <button
@@ -29,7 +29,7 @@ export function PropertyCard({ property }: { property: Property }) {
           aria-label={liked ? `Remove ${property.title} from favourites` : `Save ${property.title}`}
           onClick={() => toggle(property.id)}
           className={`absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full backdrop-blur-md transition ${
-            liked ? "bg-white text-red-500" : "bg-white/80 text-amek-900 hover:bg-white"
+            liked ? "bg-white text-red-500" : "bg-white/80 text-pride-900 hover:bg-white"
           }`}
         >
           <Heart className={`h-4 w-4 ${liked ? "fill-current" : ""}`} />
@@ -37,8 +37,8 @@ export function PropertyCard({ property }: { property: Property }) {
       </div>
 
       <div className="p-5">
-        <h3 className="font-serif text-xl text-amek-900">
-          <Link href={`/properties/${property.id}`} className="transition hover:text-amek-700">
+        <h3 className="font-serif text-xl text-pride-900">
+          <Link href={`/properties/${property.id}`} className="transition hover:text-pride-700">
             {property.title}
           </Link>
         </h3>
@@ -69,7 +69,7 @@ export function PropertyCard({ property }: { property: Property }) {
 
         <Link
           href={`/properties/${property.id}`}
-          className="mt-5 inline-flex w-full items-center justify-center rounded-full border border-amek-900/15 px-4 py-2.5 text-sm font-medium text-amek-900 transition group-hover:border-gold group-hover:bg-gold group-hover:text-amek-950"
+          className="mt-5 inline-flex w-full items-center justify-center rounded-full border border-pride-900/15 px-4 py-2.5 text-sm font-medium text-pride-900 transition group-hover:border-gold group-hover:bg-gold group-hover:text-pride-950"
         >
           View Property
         </Link>

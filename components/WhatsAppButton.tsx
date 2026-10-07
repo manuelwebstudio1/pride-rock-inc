@@ -12,7 +12,7 @@ export function WhatsAppButton() {
       href={whatsappLink(whatsappDefaultMessage)}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with AMEK Platinum Services on WhatsApp"
+      aria-label="Chat with Pride Rock Inc. on WhatsApp"
       className={`fixed right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_12px_30px_-10px_rgba(37,211,102,0.8)] transition hover:scale-105 ${
         lifted ? "bottom-24 lg:bottom-5" : "bottom-5"
       }`}

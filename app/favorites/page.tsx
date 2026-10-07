@@ -11,9 +11,9 @@ export default function FavoritesPage() {
 
   return (
     <section className="bg-cream pb-20 pt-32">
-      <div className="container-amek">
+      <div className="container-site">
         <p className="eyebrow">Saved</p>
-        <h1 className="mt-3 font-serif text-4xl text-amek-900 sm:text-5xl">Your Favourite Properties</h1>
+        <h1 className="mt-3 font-serif text-4xl text-pride-900 sm:text-5xl">Your Favourite Properties</h1>
         <p className="mt-3 max-w-xl text-muted">
           Hearts are stored on this device. Use them to keep a shortlist while you browse.
         </p>
@@ -22,9 +22,9 @@ export default function FavoritesPage() {
             <PropertyGrid properties={saved} />
           ) : (
             <div className="rounded-[28px] bg-white px-8 py-16 text-center">
-              <h2 className="font-serif text-3xl text-amek-900">No saved properties yet</h2>
+              <h2 className="font-serif text-3xl text-pride-900">No saved properties yet</h2>
               <p className="mt-3 text-muted">Tap the heart on a listing to keep it here.</p>
-              <Link href="/properties" className="mt-6 inline-flex rounded-full bg-gold px-6 py-3 text-sm font-semibold text-amek-950">
+              <Link href="/properties" className="mt-6 inline-flex rounded-full bg-gold px-6 py-3 text-sm font-semibold text-pride-950">
                 Explore Properties
               </Link>
             </div>

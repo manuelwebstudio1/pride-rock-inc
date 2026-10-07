@@ -10,10 +10,10 @@ export function PageHero({
   image: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-amek-950 pt-32 pb-20 text-white">
+    <section className="relative overflow-hidden bg-pride-950 pt-32 pb-20 text-white">
       <div className="absolute inset-0 bg-cover bg-center opacity-35" style={{ backgroundImage: `url(${image})` }} />
-      <div className="absolute inset-0 bg-gradient-to-r from-amek-950 via-amek-950/85 to-amek-950/40" />
-      <div className="container-amek relative z-10 max-w-3xl">
+      <div className="absolute inset-0 bg-gradient-to-r from-pride-950 via-pride-950/85 to-pride-950/40" />
+      <div className="container-site relative z-10 max-w-3xl">
         <p className="eyebrow text-gold-light">{eyebrow}</p>
         <h1 className="mt-4 font-serif text-4xl sm:text-6xl">{title}</h1>
         <p className="mt-4 max-w-2xl text-white/75">{text}</p>

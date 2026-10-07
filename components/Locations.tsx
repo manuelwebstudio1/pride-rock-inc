@@ -7,13 +7,13 @@ import { locations } from "@/data/locations";
 export function Locations() {
   return (
     <section className="bg-cream py-20">
-      <div className="container-amek">
+      <div className="container-site">
         <FadeIn className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
             <p className="eyebrow">Explore by Location</p>
-            <h2 className="mt-3 font-serif text-4xl text-amek-900 sm:text-5xl">Find Properties in Popular Locations</h2>
+            <h2 className="mt-3 font-serif text-4xl text-pride-900 sm:text-5xl">From Dansoman Across Accra</h2>
           </div>
-          <Link href="/properties" className="inline-flex items-center gap-2 text-sm font-semibold text-amek-800">
+          <Link href="/properties" className="inline-flex items-center gap-2 text-sm font-semibold text-pride-800">
             View All Locations
             <ArrowRight className="h-4 w-4" />
           </Link>
@@ -33,7 +33,7 @@ export function Locations() {
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-amek-950/85 via-amek-950/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-pride-950/85 via-pride-950/20 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-4 text-white">
                   <h3 className="font-serif text-2xl">{location.name}</h3>
                   <p className="mt-1 text-xs text-white/70">{location.area}</p>

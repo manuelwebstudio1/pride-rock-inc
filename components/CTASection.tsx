@@ -12,18 +12,18 @@ export function CTASection() {
         style={{ backgroundImage: `url(${images.sellCta})` }}
         aria-hidden
       />
-      <div className="absolute inset-0 bg-amek-950/82" />
-      <div className="container-amek relative z-10 grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+      <div className="absolute inset-0 bg-pride-950/82" />
+      <div className="container-site relative z-10 grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
         <div>
           <h2 className="max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
             Looking to Sell or Rent Your Property?
           </h2>
           <p className="mt-4 max-w-xl text-white/75">
-            Let AMEK Platinum Services help you reach serious buyers and tenants.
+            Let Pride Rock Inc. put your Dansoman or Accra property in front of serious buyers and tenants.
           </p>
           <Link
             href="/list-property"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-amek-950 hover:bg-gold-light"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-pride-950 hover:bg-gold-light"
           >
             List Your Property
             <ArrowRight className="h-4 w-4" />

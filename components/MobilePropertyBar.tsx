@@ -21,7 +21,7 @@ export function MobilePropertyBar({ property }: { property: Property }) {
         </a>
         <a
           href="#enquire"
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-3 py-3 text-sm font-semibold text-amek-950"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-3 py-3 text-sm font-semibold text-pride-950"
         >
           <CalendarDays className="h-4 w-4" />
           Schedule Viewing
